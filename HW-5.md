@@ -15,7 +15,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: GB
     volumes:
-      - /home/Frukt/GeekBrains/Containerization/DZ/mariadb:/var/lib/mariadb
+      - /home/Frukt/GeekBrains/Containerization/HW-5/mariadb:/var/lib/mariadb
     deploy:
       mode: replicated
       replicas: 2
