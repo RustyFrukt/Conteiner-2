@@ -10,12 +10,12 @@ version: '3.8'
 
 services:
 
-  db:
+ db:
     image: mariadb:10.10.2
     environment:
       MYSQL_ROOT_PASSWORD: GB
     volumes:
-      - /home/Frukt/develop/GeekBrains/Containerization/HW-5/mariadb:/var/lib/mariadb
+      - /home/Frukt/GeekBrains/Containerization/DZ/mariadb:/var/lib/mariadb
     deploy:
       mode: replicated
       replicas: 2
@@ -26,7 +26,7 @@ services:
     ports:
       - 6080:8080
     volumes:
-      - /home/salerat/dumps:/dumps
+      - /home/qwerty/dumps:/dumps
     deploy:
       mode: replicated
       replicas: 1
